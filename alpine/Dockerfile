@@ -25,6 +25,7 @@ RUN echo 'http://mirrors.aliyun.com/alpine/v3.11/main/' > /etc/apk/repositories 
  && gem install fluentd -v 1.10.1 \
  && gem install fluent-plugin-elasticsearch \   
  && gem install bigdecimal -v 1.4.4 \
+ && gem install fluent-plugin-kubernetes_metadata_filter -v 2.4.5 \
  && apk del .build-deps \
  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
 
